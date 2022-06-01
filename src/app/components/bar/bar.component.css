@@ -1,0 +1,21 @@
+.bar {
+    background-color: #00CED1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 1em black;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+    .title i {
+        font-size: 40px;
+        color: yellow;
+    }

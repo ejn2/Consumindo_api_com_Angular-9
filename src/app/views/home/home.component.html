@@ -1,0 +1,24 @@
+<div class="content">
+        <div class="center">
+        <h1 class="list-title">List of Beers</h1>
+        <br>
+        <div class="list-beers">
+            <table>
+                <th>Name</th><th>Brand</th><th>Quantity</th><th>Action</th>
+                <tr *ngFor="let beer of listOfBeers">
+                    <td id="t-name">{{beer.name}}</td>
+                    <td id="t-brand">{{beer.brand}}</td>
+                    <td id="t-quantity">{{beer.quantity}}</td>
+                    <td id="t-action">
+                        <button type="button" id="btn-edit" (click)="edit(beer.id)">
+                            <i class="material-icons icon">edit</i>
+                        </button>
+                        
+                        <button type="button" id="btn-delete" (click)="deleteById(beer.id);">
+                            <i class="material-icons icon">delete</i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</div>

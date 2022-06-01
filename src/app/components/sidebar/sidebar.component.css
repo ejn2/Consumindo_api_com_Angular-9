@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    margin-top: 50px;
+    float: left;
+    position: fixed;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--sidebar-color);
+    padding: 10px;
+    top: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.sidebar ul li a i {
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover > i {
+    font-size: 50px;
+}
+
+.sidebar ul li a:hover {
+    color: black;
+}
